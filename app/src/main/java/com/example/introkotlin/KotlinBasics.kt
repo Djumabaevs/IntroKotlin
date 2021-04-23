@@ -16,9 +16,5 @@ fun main() {
     println(result)
     println("is grater than  + ${5<3}")
 
-    
-
-
-
 }
 
