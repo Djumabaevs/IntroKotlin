@@ -46,3 +46,5 @@ fun average(a: Double, b: Double): Double {
     return (a + b) / 2
 }
 
+//fun main(args: Array<String>) {}
+
