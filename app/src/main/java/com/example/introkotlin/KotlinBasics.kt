@@ -38,5 +38,19 @@ var season = 3
 
     }
 
+    var age = 22
+    when(age) {
+       16, 17 -> println("you can drive now")
+       in 18..20 -> println("you can vote now")
+       !in 0..20 -> println("you can drink now")
+        else -> println("you are too young")
+    }
+
+    var x:Any = 23.54
+    when(x) {
+        is Int -> println("$x is an integer")
+        is Double -> println("$x ia a double")
+        is String -> println("$x is a string")
+    }
 }
 
