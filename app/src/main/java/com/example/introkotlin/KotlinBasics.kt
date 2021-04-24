@@ -64,5 +64,23 @@ var season = 3
         print("$z ")
         z--
     }
+
+    var feltTemp = "cold"
+    var roomTemp = 10
+    while(feltTemp == "cold"){
+        roomTemp++
+        if(roomTemp >= 20){
+            feltTemp = "comfy"
+            println("\ntemp is comfy")
+        }
+    }
+
+    for (num in 2..10){
+        println("$num ")
+    }
+    for(i in 1 until 10){
+        println("$i")
+    }
+
 }
 
