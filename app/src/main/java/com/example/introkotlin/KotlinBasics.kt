@@ -78,8 +78,17 @@ var season = 3
     for (num in 2..10){
         println("$num ")
     }
-    for(i in 1 until 10){
+    for(i in 1 until 10){ //for(i in 1.until(10))
         println("$i")
+    }
+    println("")
+    print("----------------------------------------------")
+    for(d in 100 until 200 step 3) {
+        print("$d ")
+    }
+
+    for(g in 30.downTo(10).step(2)){
+        print("\n$g")
     }
 
 }
