@@ -46,11 +46,23 @@ var season = 3
         else -> println("you are too young")
     }
 
-    var x:Any = 23.54
+    var x:Any = "23.54"
     when(x) {
         is Int -> println("$x is an integer")
-        is Double -> println("$x ia a double")
         is String -> println("$x is a string")
+        !is Double -> println("$x is not a double")
+    }
+    var y = 1
+    while(y <= 10) {
+        print("$y ")
+        y++
+    }
+    println("\nloop is done")
+
+    var z = 100
+    while(z >= 0) {
+        print("$z ")
+        z--
     }
 }
 
