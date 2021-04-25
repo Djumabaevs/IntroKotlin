@@ -47,6 +47,16 @@ fun main() {
     println("-------------------------")
     car.brake()
 
+
+
+
+    var human = Human("Bakyt", "KG", 100.0, 20.0)
+    println("______________________________________________________________________________-")
+    human.breath()
+    human.run()
+    human.display()
+
+
 }
 
 interface Drivable {
@@ -76,7 +86,9 @@ class Human(name: String, origin: String, weight: Double, override var maxSpeed:
     override fun run() {
         println("run on two legs")
     }
+
 }
+
 
 
 
