@@ -1,5 +1,6 @@
 package com.example.introkotlin
 
+import java.lang.ArithmeticException
 import kotlin.math.floor
 
 fun main() {
@@ -69,4 +70,14 @@ fun main() {
     println(safeString)
     println(safeInt)
 
+    fun getNumber(str: String): Int {
+        return try {
+            Integer.parseInt(str)
+        } catch(e: ArithmeticException){
+            0
+        }
+    }
+
+    val str = getNumber("10")
+    println(str)
 }
