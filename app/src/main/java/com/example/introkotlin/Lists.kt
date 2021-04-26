@@ -58,6 +58,6 @@ fun main() {
     var avg = total / list.size
     println("average is $avg")
 
-    val sum: (Int, Int) -> Int
+    val sum: (Int, Int) -> Int = {a: Int, b: Int -> a + b}
 
 }
