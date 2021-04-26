@@ -43,4 +43,21 @@ fun main() {
     val str2: String? = obj2 as? String
     print(str2)
 
+    println("__________________________________________________")
+
+    val list: ArrayList<Double> = ArrayList();
+    list.add(23.45)
+    list.add(34.54)
+    list.add(72.09)
+    list.add(1343.2)
+    list.add(98.46207)
+    var total = 0.0
+    for(i in list) {
+        total += i
+    }
+    var avg = total / list.size
+    println("average is $avg")
+
+    val sum: (Int, Int) -> Int
+
 }
