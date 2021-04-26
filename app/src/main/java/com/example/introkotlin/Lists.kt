@@ -63,6 +63,10 @@ fun main() {
     val sum2 = {a: Int, b: Int -> println(a + b)}
     sum(10,5)
 
-
+    val location: Any = "Kotlin"
+    val safeString: String? = location as? String
+    val safeInt: Int? = location as? Int
+    println(safeString)
+    println(safeInt)
 
 }
